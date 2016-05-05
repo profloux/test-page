@@ -1,0 +1,95 @@
+*{padding:0;margin:0}
+
+header, nav, main, footer { display: block; }
+body { font-family:Verdana, Arial, sans-serif;
+       background-color: #256496;
+     }
+#wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 67%;
+           margin: auto;
+         }
+header { background-color: #869dc7;
+         color: #00005D; 
+         font-size: 150%; 
+         padding: 20px 40px 20px;
+       }
+
+#tag { padding-right: 20px;
+	   font-size: .80em;
+	   font-style: italic;
+	   text-align: right;
+	   color: #00005D;
+     }
+
+h1 { margin-bottom: 0; text-align:center;} 
+	   
+     
+h2 { color: black; 
+     font-family: arial, sans-serif;
+     font-size: 200%;
+   }
+nav { float: left;
+      width: 150px;
+      letter-spacing:0.1em;
+      font-weight: bold;
+      background-color:#B3B3FF;
+    } 
+nav ul { list-style-type: none; 
+         margin: 0;
+         padding: 0;
+       }
+nav li { padding: 15px;}
+nav a { text-decoration: none; }
+nav a:link { color: black; }
+nav a:visited { color: #eaeaea; }
+nav a:hover {  color: #869dc7;}
+main { margin-left: 155px;
+       padding: 20px; 
+       background-color: #ffffff;
+       color: #000000;
+     } 
+
+footer { font-size:70%;
+         text-align: center;
+         clear: right;
+         padding: 20px;
+         background-color: #869dc7;
+       }
+@media only screen and (max-width: 4000px) {
+  body { margin: 0; }
+  wrapper{ width: auto; }
+  main { margin-left: 0; }
+  nav { float: none;  width: auto;}
+  nav li { display: inline-block; padding: 0.5em; }
+  nav ul { text-align: center; }
+  nav a { border-style: none; }
+  h1, h2 { font-size: 120%; }
+  p { font-size: 100%; }
+  ul li{font-size:100%;}
+  ol li{font-size:100%;}
+  }
+
+@media only screen and (max-width: 1024px) {
+  body { margin: 0; }
+  wrapper{ width: auto; }
+  main { margin-left: 0; }
+  nav { float: none;  width: auto;}
+  nav li { display: inline-block; padding: 0.5em; }
+  nav ul { text-align: center; }
+  nav a { border-style: none; }
+  h1, h2 { font-size: 120%; }
+  p { font-size: 90%; }
+  ul li{font-size:90%;}
+  ol li{font-size:90%;}
+  }
+
+@media only screen and (max-width: 768px) {
+  h1, h2 { font-size: 100%; }
+  p { font-size: 90%; }
+  figure { display: none;}
+  nav, nav ul, nav li { padding: 0; }
+  nav li { display: block;}
+  nav a { display: block; padding: 0.5em 0;
+          border-bottom: 2px ridge #00005D; }
+  }
